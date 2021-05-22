@@ -1,0 +1,31 @@
+extends base.pug
+
+    
+block style 
+    style
+        include ../static/style.css
+block content 
+    nav.top 
+        ul 
+            div#logo
+                img(src="static/img/logo.png", alt="")
+                | PDA
+            li #[a(href = "/") Home] 
+            li #[a(href =" /") About] 
+            li #[a(href = "/") Contact] 
+            li #[a(href = "/") Class Info] 
+            li #[a(href = "/") Services]
+    h1(style = "font-size: 45px") Contact Form         
+    form(action="" method = "POST") 
+        input(type="text" name = "name" placeholder = "Enter your name")
+        br
+        input(type="text" name = "pno" placeholder = "Enter your Phone Number")
+        br
+        input(type="text" name = "email"  placeholder = "Enter your Email-Id")
+        br
+        input(type="text" name = "address" placeholder = "Enter your address")
+        br
+        input(type="text" name = "concern" placeholder = "Elaborate your concern")
+        button(type = "submit", class = "btn") Submit
+    footer#cfooter 
+        p Copyright &copy; 2021 Preetham Dance Academy| All rights reserved

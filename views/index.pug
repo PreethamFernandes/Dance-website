@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Preetham Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav.top 
+        ul 
+            div#logo
+                img(src="static/img/logo.png", alt="")
+                | PDA
+            li #[a(href = "/") Home] 
+            li #[a(href =" /") About] 
+            li #[a(href = "/contact") Contact] 
+            li #[a(href = "/") Class Info] 
+            li #[a(href = "/") Services] 
+
+    section#introSection  
+        div.big 
+            | Welcome to Preetham's Dance Academy
+        div.small   
+            | Eat Sleep Dance Repeat
+
+    section#mission
+        h2 Our Mission
+        div.card 
+
+            .card1 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="static/img/1.png", alt="")
+                    .card-content 
+                        p This is the best academy of the future 
+
+            .card1 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="static/img/2.png", alt="")
+                    .card-content 
+                        p This is the best academy of the future
+
+            .card1 Expert Trainers
+                div.card-box
+                    div.card-img
+                        img(src="static/img/2.png", alt="")
+                    .card-content 
+                        p This is the best academy of the future           
+    section#sponsorSection.sponsors 
+        h2 Our Sponsors
+            img(src="static/img/logos.png", id = "logo", alt="")
+    footer#footer 
+        p Copyright &copy; 2021 Preetham Dance Academy| All rights reserved
+
+    
+    script
+      include ../static/main.js
